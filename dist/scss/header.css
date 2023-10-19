@@ -1,0 +1,144 @@
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: 0 0;
+  z-index: 99;
+  background-color: rgba(16, 28, 37, 0.75); }
+  header .header-inner .header-container .logo-header {
+    margin: 1.66666666667rem 0; }
+    header .header-inner .header-container .logo-header .logo-inner {
+      padding-left: 2rem;
+      height: 4.66666666667rem; }
+      header .header-inner .header-container .logo-header .logo-inner img {
+        height: 100%;
+        width: 66%; }
+  header .header-inner .header-container .navigation-wrapper {
+    padding: 0;
+    margin: 0; }
+    header .header-inner .header-container .navigation-wrapper > ul {
+      display: flex;
+      margin-bottom: 0;
+      justify-content: center; }
+      header .header-inner .header-container .navigation-wrapper > ul > li.active > a {
+        color: #01aef0; }
+        header .header-inner .header-container .navigation-wrapper > ul > li.active > a:before {
+          visibility: visible;
+          opacity: 1;
+          transition: all .3s;
+          width: 100%;
+          left: 0; }
+      header .header-inner .header-container .navigation-wrapper > ul > li {
+        padding-right: 20px; }
+        @media screen and (min-width: 1550px) {
+          header .header-inner .header-container .navigation-wrapper > ul > li {
+            padding-right: 38px; } }
+        @media screen and (min-width: 1370px) and (max-width: 1499px) {
+          header .header-inner .header-container .navigation-wrapper > ul > li {
+            padding-right: 27px; } }
+        @media screen and (max-width: 1300px) {
+          header .header-inner .header-container .navigation-wrapper > ul > li {
+            padding-right: 16px; } }
+        header .header-inner .header-container .navigation-wrapper > ul > li:hover > a:before {
+          visibility: visible;
+          opacity: 1;
+          transition: all .3s;
+          width: 100%;
+          left: 0; }
+        header .header-inner .header-container .navigation-wrapper > ul > li:hover .sub-menu {
+          visibility: visible;
+          opacity: 1;
+          transition: all .7s; }
+        header .header-inner .header-container .navigation-wrapper > ul > li a {
+          color: white;
+          font-family: OpenSans-Regular,sans-serif;
+          position: relative; }
+          header .header-inner .header-container .navigation-wrapper > ul > li a:before {
+            position: absolute;
+            top: 25px;
+            right: 0;
+            width: 0;
+            height: 3px;
+            border-radius: 30px;
+            content: "";
+            background: #01aef0;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .3s; }
+        header .header-inner .header-container .navigation-wrapper > ul > li .sub-menu {
+          position: absolute;
+          top: 35px;
+          width: 248px;
+          height: auto;
+          z-index: 999999;
+          visibility: hidden;
+          opacity: 0;
+          transition: all .7s;
+          padding: 22px 25px;
+          background-color: rgba(15, 50, 64, 0.8); }
+          header .header-inner .header-container .navigation-wrapper > ul > li .sub-menu li {
+            padding: 8px 0px; }
+            header .header-inner .header-container .navigation-wrapper > ul > li .sub-menu li:first-child {
+              padding-top: 0; }
+            header .header-inner .header-container .navigation-wrapper > ul > li .sub-menu li a:hover {
+              color: #01aef0; }
+  header .header-inner .header-container .list-icon {
+    padding: 0;
+    margin: 0; }
+    header .header-inner .header-container .list-icon ul {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 45px;
+      align-items: center;
+      margin-bottom: 0; }
+      header .header-inner .header-container .list-icon ul li:first-child {
+        z-index: 2; }
+      header .header-inner .header-container .list-icon ul li.icon-search a i {
+        font-size: 25px;
+        color: #fff; }
+      header .header-inner .header-container .list-icon ul li a .lang-active {
+        position: relative; }
+        header .header-inner .header-container .list-icon ul li a .lang-active:after {
+          font-size: 15px;
+          color: #858585;
+          font-family: fontawesome;
+          content: "\f107";
+          z-index: 1;
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 2px; }
+      header .header-inner .header-container .list-icon ul li span {
+        text-transform: uppercase; }
+      header .header-inner .header-container .list-icon ul li .lang-sub {
+        padding-top: 5px;
+        visibility: hidden; }
+      header .header-inner .header-container .list-icon ul .icon-search {
+        position: relative;
+        padding-right: 20px; }
+        header .header-inner .header-container .list-icon ul .icon-search .menu-search {
+          display: none;
+          position: absolute;
+          top: 50px;
+          right: 20px;
+          width: 300px;
+          background: #f3f3f3;
+          z-index: 1; }
+          header .header-inner .header-container .list-icon ul .icon-search .menu-search input {
+            margin: 0;
+            background: 0 0;
+            padding: 15px 20px;
+            border: navajowhite;
+            font-size: 14px;
+            width: 100%;
+            line-height: normal;
+            background-color: #f3f3f3; }
+      header .header-inner .header-container .list-icon ul .lang-pc .show-lang-img a img, header .header-inner .header-container .list-icon ul .lang-pc .lang-sub-2 a img {
+        width: 40px; }
+      header .header-inner .header-container .list-icon ul .lang-pc .show-lang-img a span, header .header-inner .header-container .list-icon ul .lang-pc .lang-sub-2 a span {
+        color: #fff; }
+      header .header-inner .header-container .list-icon ul .lang-pc .show-lang-img a i, header .header-inner .header-container .list-icon ul .lang-pc .lang-sub-2 a i {
+        font-size: 13px;
+        color: #fff; }
+
+/*# sourceMappingURL=header.css.map */

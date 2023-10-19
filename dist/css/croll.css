@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box; /* so we don't have to worry about padding affecting width */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font: normal 16px/1.2 sans-serif;
+}
+#leftSidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2; /* needs to stay on top of the mainStack AND the sidePanel */
+    /* for demo only: */
+    min-width: 250px;
+    border-right: 1px solid #000;
+    background-color: rgba(255,255,255,0.5);
+}
+#leftSidebar > ul {
+    /* all of these are for demo only: */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#leftSidebar > ul > li {
+    /* all of these are for demo only: */
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 1px solid #999;
+}
+#panel1, #panel2, #panel3, #panel4, #panel5, #panel6 {
+    /* all of these are for demo only: */
+    width: 100%;
+    height: 100vh; /* css3 way to say 100% of the viewport height. works on IE9+ and modern browsers. needs patch for iOS devices: https://gist.github.com/pburtchaell/e702f441ba9b3f76f587. also needs patch for print stylesheets (height:auto). */
+    text-align: center;
+    font-size: 50px;
+}
+#panel1, #panel3, #panel5 {
+    /* for demo only: */
+    background-color: khaki;
+}
+#panel2, #panel4, #panel6 {
+    /* for demo only: */
+    background-color: cadetblue;
+}
+#sidePanelButton {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* for demo only: */
+    cursor: pointer;
+    padding: 40px;
+    border: 1px solid #000;
+    background-color: tomato;
+}
+#sidePanel {
+    width: 100%;
+    height: 100vh; /* css3 way to say 100% of the viewport height. works on IE9+ and modern browsers. needs patch for iOS devices: https://gist.github.com/pburtchaell/e702f441ba9b3f76f587. also needs patch for print stylesheets (height:auto). */
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 0;
+    left: 100%;
+    transition: left 0.4s; /* creates sliding motion */
+    -webkit-transition: left 0.4s;
+    z-index: 1; /* needs to be above the mainStack */
+    background-color: tomato; /* you need to set a background-color here so this panel covers up the others when it slides in. */
+    /* for demo only: */
+    text-align: center;
+    font-size: 50px;
+}
+#sidePanel.open {
+    left: 0; /* move the sidePanel into the viewport when you click the button */
+}

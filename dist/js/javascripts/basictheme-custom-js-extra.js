@@ -1,0 +1,1 @@
+var sk_array = { "site_url": "https:\/\/truongthanhgroup.com.vn\/wp-admin\/", "base_url": "https:\/\/truongthanhgroup.com.vn", "ajax_url": "https:\/\/truongthanhgroup.com.vn\/wp-admin\/admin-ajax.php", "load_product_nonce": "1c14aae757", "ajax_nonce": "dad1da57c1" }

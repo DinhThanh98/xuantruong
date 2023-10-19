@@ -1,0 +1,17 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Helvetica Neue Regular';
+    src: url('/wp-content/themes/saokim-theme/fonts/helvetica-neue/helvetica-neue-regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Helvetica Neue Bold';
+    src: url('/wp-content/themes/saokim-theme/fonts/helvetica-neue/helvetica-neue-bold.ttf') format('truetype')
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Helvetica Neue Light';
+    src: url('/wp-content/themes/saokim-theme/fonts/helvetica-neue/helvetica-neue-light.ttf') format('truetype')
+}

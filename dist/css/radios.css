@@ -1,0 +1,80 @@
+.check-pay {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.check-pay input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 10px !important;
+    left: -11px !important;
+    height: 25px;
+    width: 25px;
+    background-color: #a0a0a0;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.check-pay:hover input~.checkmark {
+    background-color: #918e8e;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.check-pay input:checked~.checkmark {
+    background-color: #d56f2f;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.check-pay input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.check-pay .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.pay-button h6 {
+    margin-left: 50px;
+}
